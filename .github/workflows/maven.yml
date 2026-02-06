@@ -30,6 +30,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Playwright Browsers
+        run: npx playwright install--with-deps
+
       - name: Run Playright Tests
         run: mvn test
 
