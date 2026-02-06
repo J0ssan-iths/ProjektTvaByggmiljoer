@@ -8,6 +8,7 @@ public class ProjektTvaByggmiljoerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ProjektTvaByggmiljoerApplication.class, args);
+
     }
 
 }
