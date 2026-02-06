@@ -36,7 +36,7 @@ jobs:
           node-version: '18'
 
       - name: Install Playwright Browsers
-        run: npx playwright install--with-deps
+        run: npx playwright install --with-deps
 
       - name: Run Playright Tests
         run: mvn test
