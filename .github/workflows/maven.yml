@@ -21,7 +21,7 @@ jobs:
 
     steps:
 
-      - name: Checkout code
+      - name: checkout-code
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
@@ -30,12 +30,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Set up Node
+      - name: setup-node
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      - name: Install Playwright Browsers
+      - name: install-playwright
         run: npx playwright install --with-deps
 
       - name: Run Playright Tests
